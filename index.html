@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <title>🔥 燃烧卡路里大比拼 · 邀请函</title>
 <style>
-{margin:0;padding:0;box-sizing:border-box}
+*{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:linear-gradient(160deg,#e8f4fd,#dbeefe 15%,#c5e3ff 30%,#f0f7ff 50%,#fff 70%,#fff5eb);min-height:100vh;color:#1a2a4a;overflow-x:hidden}
 body::before{content:'';position:fixed;top:-200px;left:-100px;right:-100px;height:500px;background:linear-gradient(135deg,#0052d9,#0066ff 30%,#3d8bfd 60%,#ff6a00);border-radius:0 0 50% 50%;opacity:.07;z-index:0;pointer-events:none}
 .orb{position:fixed;border-radius:50%;pointer-events:none;z-index:0;filter:blur(60px);opacity:.1}
@@ -14,7 +14,7 @@ body::before{content:'';position:fixed;top:-200px;left:-100px;right:-100px;heigh
 @keyframes of1{0%,100%{transform:translate(0,0)}50%{transform:translate(-30px,40px)}}
 @keyframes of2{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,-30px)}}
 .container{position:relative;z-index:1;max-width:420px;margin:0 auto;padding:20px 16px 40px}
-/ 顶部 /
+/* 顶部 */
 .header{text-align:center;padding:24px 0 10px}
 .tcl-logo{font-size:11px;font-weight:700;letter-spacing:3px;color:#0052d9}
 .dept{font-size:13px;color:#5a6d8a;font-weight:500;letter-spacing:1px;margin-top:6px}
@@ -24,7 +24,7 @@ body::before{content:'';position:fixed;top:-200px;left:-100px;right:-100px;heigh
 .mr{display:flex;gap:2px;align-items:center}
 .mr span{width:12px;height:12px;border-radius:50%;border:2px solid}
 .c1{border-color:#0081C8!important}.c2{border-color:#333!important}.c3{border-color:#EE334E!important}.c4{border-color:#FCB131!important}.c5{border-color:#00A651!important}
-/ 邀请函大标题 /
+/* 邀请函大标题 */
 .invite-title{font-size:36px;font-weight:900;letter-spacing:12px;margin:16px 0 8px;background:linear-gradient(135deg,#0052d9,#3d8bfd,#0066ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .invite-sub{font-size:12px;color:#8a9bb5;letter-spacing:4px;margin-bottom:12px}
 .header h1{font-size:28px;font-weight:900;white-space:nowrap;background:linear-gradient(135deg,#ff6a00,#ee0979,#ff6a00);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:sh 3s linear infinite}
@@ -33,10 +33,10 @@ body::before{content:'';position:fixed;top:-200px;left:-100px;right:-100px;heigh
 .slogan{margin-top:10px;font-size:13px;color:#8a9bb5;font-style:italic}
 .odiv{display:flex;height:3px;border-radius:2px;overflow:hidden;margin:16px 0 0}
 .odiv span{flex:1}
-/ 卡片 /
+/* 卡片 */
 .card{background:rgba(255,255,255,.75);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.85);border-radius:20px;padding:24px 20px;margin-top:20px;box-shadow:0 4px 24px rgba(0,60,150,.06)}
 .ct{font-size:17px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px;color:#1a2a4a}
-/ 挑战按钮 /
+/* 挑战按钮 */
 .cc{text-align:center;background:linear-gradient(135deg,rgba(255,106,0,.06),rgba(238,9,121,.04),rgba(0,102,255,.04))}
 .cc-text{font-size:14px;color:#5a6d8a;margin-bottom:16px;line-height:1.7}
 .cc-text b{color:#d4500a}
@@ -56,25 +56,25 @@ body::before{content:'';position:fixed;top:-200px;left:-100px;right:-100px;heigh
 .ebar-fill{height:100%;border-radius:7px;transition:width .8s;background:linear-gradient(90deg,#0081C8,#00A651,#FCB131,#EE334E,#ff6a00);background-size:200% auto;animation:ef 3s linear infinite}
 @keyframes ef{to{background-position:200% center}}
 .etxt{text-align:center;margin-top:8px;font-size:13px;color:#5a6d8a;font-weight:600}
-/ 倒计时 /
+/* 倒计时 */
 .cdrow{display:flex;justify-content:center;gap:10px;margin-top:16px}
 .cdi{background:linear-gradient(135deg,#0052d9,#0066ff);border-radius:14px;padding:12px 16px;text-align:center;min-width:60px;box-shadow:0 4px 12px rgba(0,102,255,.2)}
 .cdi .n{font-size:26px;font-weight:800;color:#fff}
 .cdi .u{font-size:11px;color:rgba(255,255,255,.7);margin-top:2px}
 .cdlabel{text-align:center;margin-top:10px;font-size:12px;color:#8a9bb5}
-/ 信息 /
+/* 信息 */
 .ig{display:flex;flex-direction:column;gap:12px}
 .ir{display:flex;align-items:flex-start;gap:10px;font-size:14px;line-height:1.6}
 .ir .l{flex-shrink:0;color:#8a9bb5;min-width:70px;text-align:right;font-weight:500}
 .ir .v{color:#2a3d5c;font-weight:600}
-/ 步骤 /
+/* 步骤 */
 .steps{display:flex;justify-content:space-between;gap:6px;flex-wrap:wrap}
 .stp{flex:1;min-width:70px;text-align:center;padding:14px 4px;border-radius:14px;background:linear-gradient(135deg,rgba(0,102,255,.05),rgba(255,106,0,.05));border:1px solid rgba(0,102,255,.1);cursor:pointer;transition:all .3s}
 .stp:active{transform:scale(.95);background:rgba(0,102,255,.1)}
 .stp .e{font-size:28px;display:block;margin-bottom:6px}
 .stp .t{font-size:11px;color:#5a6d8a;line-height:1.4;font-weight:500}
 .sarr{display:flex;align-items:center;color:#c0cfe0;font-size:16px;flex-shrink:0}
-/ 翻卡 /
+/* 翻卡 */
 .fg{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .fc{perspective:600px;cursor:pointer;height:90px}
 .fi{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
@@ -85,7 +85,7 @@ body::before{content:'';position:fixed;top:-200px;left:-100px;right:-100px;heigh
 .fb{background:linear-gradient(135deg,#fff5eb,#fff0e0);border:1px solid rgba(255,106,0,.2);transform:rotateY(180deg);padding:6px}
 .fb .fe{font-size:24px}.fb .fn{font-size:10px;color:#5a4030;margin-top:4px;text-align:center;font-weight:600}.fb .fcl{font-size:9px;color:#d4500a;margin-top:2px;font-weight:600}
 .fpt{text-align:center;font-size:12px;color:#8a9bb5;margin-top:12px}
-/ 骰子 /
+/* 骰子 */
 .ds{text-align:center}
 .dbtn{width:80px;height:80px;border-radius:18px;border:none;cursor:pointer;background:linear-gradient(135deg,#fff,#f0f7ff);box-shadow:0 4px 16px rgba(0,60,150,.12);font-size:40px;transition:all .3s;display:inline-flex;align-items:center;justify-content:center}
 .dbtn:active{transform:scale(.9) rotate(15deg)}
@@ -93,7 +93,7 @@ body::before{content:'';position:fixed;top:-200px;left:-100px;right:-100px;heigh
 @keyframes dr{0%{transform:rotate(0) scale(1)}25%{transform:rotate(90deg) scale(.8)}50%{transform:rotate(180deg) scale(1.1)}75%{transform:rotate(270deg) scale(.9)}100%{transform:rotate(360deg) scale(1)}}
 .dres{margin-top:14px;font-size:15px;color:#d4500a;font-weight:700;min-height:24px}
 .ddesc{font-size:12px;color:#8a9bb5;margin-top:6px}
-/ 体力值 /
+/* 体力值 */
 .ss{text-align:center}
 .slbl{font-size:14px;color:#5a6d8a;margin-bottom:12px}
 .sslider{-webkit-appearance:none;appearance:none;width:100%;height:10px;border-radius:5px;outline:none;cursor:pointer;background:linear-gradient(90deg,#00A651,#FCB131 40%,#ff6a00 70%,#EE334E)}
@@ -101,7 +101,7 @@ body::before{content:'';position:fixed;top:-200px;left:-100px;right:-100px;heigh
 .sslider::-moz-range-thumb{width:28px;height:28px;border-radius:50%;background:#fff;border:3px solid #ff6a00;cursor:pointer}
 .slbls{display:flex;justify-content:space-between;margin-top:6px;font-size:11px;color:#8a9bb5}
 .sout{margin-top:14px;font-size:16px;font-weight:700;color:#d4500a;min-height:24px}
-/ 转盘 /
+/* 转盘 */
 .ws{text-align:center}
 .wc{position:relative;width:260px;height:260px;margin:0 auto}
 .wcanvas{width:260px;height:260px}
@@ -109,11 +109,11 @@ body::before{content:'';position:fixed;top:-200px;left:-100px;right:-100px;heigh
 .wp:active{transform:translate(-50%,-50%) scale(.92)}
 .wres{margin-top:16px;font-size:15px;min-height:24px;color:#d4500a;font-weight:700}
 .wdesc{font-size:12px;color:#8a9bb5;margin-top:6px}
-/ 标签 /
+/* 标签 */
 .hl{display:flex;flex-wrap:wrap;gap:8px}
 .tg{padding:7px 14px;border-radius:20px;font-size:12px;background:linear-gradient(135deg,rgba(0,102,255,.06),rgba(255,106,0,.06));border:1px solid rgba(0,102,255,.12);color:#3d6ba8;font-weight:500;cursor:pointer;transition:all .3s}
 .tg:active{background:linear-gradient(135deg,rgba(255,106,0,.15),rgba(238,9,121,.1));border-color:rgba(255,106,0,.3);color:#d4500a;transform:scale(1.05)}
-/ 时间轴 /
+/* 时间轴 */
 .tl{position:relative;padding-left:24px}
 .tl::before{content:'';position:absolute;left:8px;top:4px;bottom:4px;width:2.5px;background:linear-gradient(to bottom,#0066ff,#3d8bfd,#ff6a00,#ee0979);border-radius:2px}
 .ti{position:relative;margin-bottom:18px;padding-left:16px}
@@ -123,7 +123,7 @@ body::before{content:'';position:fixed;top:-200px;left:-100px;right:-100px;heigh
 .tt{font-size:12px;color:#0066ff;font-weight:700}
 .tn{font-size:14px;font-weight:700;margin-top:2px;color:#1a2a4a}
 .tx{font-size:12px;color:#8a9bb5;margin-top:2px;line-height:1.5}
-/ 头像墙 /
+/* 头像墙 */
 .aw{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
 .ai{display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer;transition:transform .3s}
 .ai:active{transform:scale(.9)}
@@ -135,19 +135,19 @@ body::before{content:'';position:fixed;top:-200px;left:-100px;right:-100px;heigh
 .ai.ch .ck{display:block}
 .chint{text-align:center;font-size:12px;color:#a0b0c8;margin-top:12px}
 .chtot{text-align:center;margin-top:8px;font-size:13px;color:#d4500a;font-weight:700;min-height:20px}
-/ 宣言 /
+/* 宣言 */
 .ps{text-align:center}
 .pbtn{width:100%;padding:16px;border:none;border-radius:16px;font-size:16px;font-weight:700;color:#fff;cursor:pointer;background:linear-gradient(135deg,#ff6a00,#ee0979);box-shadow:0 6px 24px rgba(255,106,0,.25);transition:all .3s;letter-spacing:2px}
 .pbtn:active{transform:scale(.97)}
 .pbtn.pd{background:linear-gradient(135deg,#0052d9,#3d8bfd);box-shadow:0 6px 24px rgba(0,102,255,.25)}
 .pres{margin-top:14px;font-size:14px;min-height:20px;color:#3d6ba8;line-height:1.6;font-weight:500}
-/ 提醒 /
+/* 提醒 */
 .rm{font-size:13px;color:#6a7d98;line-height:1.8}
 .rm li{margin-bottom:4px}
 .rm b{color:#2a3d5c}
 .shk{text-align:center;margin-top:24px;padding:16px;font-size:12px;color:#b0c0d5;animation:gp 3s ease-in-out infinite}
 @keyframes gp{0%,100%{opacity:.4}50%{opacity:.7}}
-/ 弹窗 /
+/* 弹窗 */
 .mo{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:100;background:rgba(255,255,255,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);justify-content:center;align-items:center;padding:20px}
 .mo.show{display:flex}
 .md{background:linear-gradient(135deg,#fff,#f0f7ff);border:1px solid rgba(0,102,255,.12);border-radius:24px;padding:36px 28px;text-align:center;max-width:320px;width:100%;box-shadow:0 20px 60px rgba(0,60,150,.15);animation:pi .4s cubic-bezier(.175,.885,.32,1.275)}
@@ -157,7 +157,7 @@ body::before{content:'';position:fixed;top:-200px;left:-100px;right:-100px;heigh
 .md p{font-size:14px;color:#6a7d98;line-height:1.7}
 .mc{margin-top:24px;padding:12px 40px;border:none;border-radius:12px;font-size:15px;font-weight:600;color:#fff;cursor:pointer;background:linear-gradient(135deg,#0052d9,#3d8bfd);box-shadow:0 4px 12px rgba(0,102,255,.25)}
 .mc:active{transform:scale(.95)}
-/ 烟花 /
+/* 烟花 */
 .fw{position:fixed;pointer-events:none;z-index:200;border-radius:50%;animation:fb .8s ease-out forwards}
 @keyframes fb{0%{transform:translate(0,0) scale(1);opacity:1}100%{transform:translate(var(--tx),var(--ty)) scale(0);opacity:0}}
 .footer{text-align:center;margin-top:30px;padding:20px 0;font-size:12px;color:#a0b0c8;line-height:1.8}
@@ -340,11 +340,11 @@ uCD();setInterval(uCD,1000);
 var cOk=false,aCnt=0;
 var dotsEl=document.getElementById('cDots');
 for(var i=0;i<12;i++){var dt=document.createElement('div');dt.className='dot';dt.id='dt'+i;dt.textContent='🔥';dotsEl.appendChild(dt)}
-var pre=Math.floor(Math.random()4)+3;
+var pre=Math.floor(Math.random()*4)+3;
 for(var i=0;i<pre;i++)document.getElementById('dt'+i).classList.add('lit');
 aCnt=pre;uEn();
 function acceptC(){if(cOk)return;cOk=true;var b=document.getElementById('cBtn');b.classList.add('ok');b.innerHTML='✅ 挑战已接受';aCnt++;document.getElementById('dt'+(aCnt-1)).classList.add('lit');document.getElementById('cStat').textContent='🔥 你已加入战斗序列！';uEn();document.getElementById('cMo').classList.add('show');tFW();if(navigator.vibrate)navigator.vibrate([100,50,100])}
-function uEn(){var p=Math.round(aCnt/12100);document.getElementById('eFill').style.width=p+'%';var t='🔋 团队能量 '+aCnt+'/12';if(aCnt>=12)t+=' · 🔥 全员集结完毕！';else if(aCnt>=8)t+=' · 即将满员！';else if(aCnt>=4)t+=' · 持续集结中...';else t+=' · 等待集结...';document.getElementById('eTxt').textContent=t}
+function uEn(){var p=Math.round(aCnt/12*100);document.getElementById('eFill').style.width=p+'%';var t='🔋 团队能量 '+aCnt+'/12';if(aCnt>=12)t+=' · 🔥 全员集结完毕！';else if(aCnt>=8)t+=' · 即将满员！';else if(aCnt>=4)t+=' · 持续集结中...';else t+=' · 等待集结...';document.getElementById('eTxt').textContent=t}
 // ===== 翻卡 =====
 var sps=[{e:'🏋️',n:'力量器械',c:'~3.5千卡/分钟'},{e:'🏃',n:'跑步机慢跑',c:'~7.5千卡/分钟'},{e:'🚴',n:'健身单车',c:'~6.8千卡/分钟'},{e:'🤸',n:'徒手训练',c:'~3.0千卡/分钟'},{e:'🚣',n:'划船机',c:'~5.0千卡/分钟'},{e:'🥾',n:'跑步机快走',c:'~4.8千卡/分钟'},{e:'⭕',n:'椭圆机',c:'~5.0千卡/分钟'},{e:'💪',n:'哑铃训练',c:'~3.5千卡/分钟'}];
 var fCnt=0,fG=document.getElementById('fGrid');
@@ -353,27 +353,27 @@ sps.forEach(function(sp){var cd=document.createElement('div');cd.className='fc';
 // ===== 骰子 =====
 var dRs=[{f:'⚀',t:'🏋️ 力量器械 · 来3组推胸热热身！'},{f:'⚁',t:'🏃 跑步机慢跑 · 先跑10分钟开开胃！'},{f:'⚂',t:'🚴 健身单车 · 骑15分钟感受速度！'},{f:'⚃',t:'💪 哑铃训练 · 弯举3组秀一下！'},{f:'⚄',t:'⭕ 椭圆机 · 全身动起来20分钟！'},{f:'⚅',t:'🚣 划船机 · 体验水上运动的快感！'}];
 var dRl=false;
-function rollD(){if(dRl)return;dRl=true;var b=document.getElementById('dBtn');b.classList.add('rl');document.getElementById('dRes').textContent='';var c=0;var iv=setInterval(function(){var r=dRs[Math.floor(Math.random()6)];b.textContent=r.f;c++;if(c>10){clearInterval(iv);b.classList.remove('rl');var fn=dRs[Math.floor(Math.random()6)];b.textContent=fn.f;document.getElementById('dRes').textContent=fn.t;dRl=false;if(navigator.vibrate)navigator.vibrate(50)}},80)}
+function rollD(){if(dRl)return;dRl=true;var b=document.getElementById('dBtn');b.classList.add('rl');document.getElementById('dRes').textContent='';var c=0;var iv=setInterval(function(){var r=dRs[Math.floor(Math.random()*6)];b.textContent=r.f;c++;if(c>10){clearInterval(iv);b.classList.remove('rl');var fn=dRs[Math.floor(Math.random()*6)];b.textContent=fn.f;document.getElementById('dRes').textContent=fn.t;dRl=false;if(navigator.vibrate)navigator.vibrate(50)}},80)}
 // ===== 体力值 =====
-function upS(v){v=parseInt(v);var em,lb,cl;if(v<=20){em='😴';lb='佛系养生';cl=Math.round(60+v2)}else if(v<=40){em='🙂';lb='轻松热身';cl=Math.round(80+v2)}else if(v<=60){em='😎';lb='正常发挥';cl=Math.round(120+v1.5)}else if(v<=80){em='💪';lb='火力全开';cl=Math.round(150+v1.5)}else{em='🔥';lb='全力燃烧';cl=Math.round(200+v1.2)}document.getElementById('sOut').textContent=em+' '+lb+' · 预计消耗 '+cl+' 千卡'}
+function upS(v){v=parseInt(v);var em,lb,cl;if(v<=20){em='😴';lb='佛系养生';cl=Math.round(60+v*2)}else if(v<=40){em='🙂';lb='轻松热身';cl=Math.round(80+v*2)}else if(v<=60){em='😎';lb='正常发挥';cl=Math.round(120+v*1.5)}else if(v<=80){em='💪';lb='火力全开';cl=Math.round(150+v*1.5)}else{em='🔥';lb='全力燃烧';cl=Math.round(200+v*1.2)}document.getElementById('sOut').textContent=em+' '+lb+' · 预计消耗 '+cl+' 千卡'}
 // ===== 转盘 =====
 var wIs=[{t:'100千卡',c:'#0081C8'},{t:'150千卡',c:'#ff6a00'},{t:'200千卡',c:'#EE334E'},{t:'120千卡',c:'#00A651'},{t:'180千卡',c:'#FCB131'},{t:'250千卡',c:'#0052d9'},{t:'160千卡',c:'#ee0979'},{t:'300千卡',c:'#3d8bfd'}];
 var cvs=document.getElementById('wCvs'),cx2=cvs.getContext('2d'),cAng=0,spn=false;
-function dW(a){var cx=260,cy=260,r=240;cx2.clearRect(0,0,520,520);var arc=2Math.PI/wIs.length;wIs.forEach(function(it,i){var sA=a+iarc,eA=sA+arc;cx2.beginPath();cx2.moveTo(cx,cy);cx2.arc(cx,cy,r,sA,eA);cx2.closePath();cx2.fillStyle=it.c;cx2.globalAlpha=.75;cx2.fill();cx2.globalAlpha=1;cx2.strokeStyle='rgba(255,255,255,.4)';cx2.lineWidth=2;cx2.stroke();cx2.save();cx2.translate(cx,cy);cx2.rotate(sA+arc/2);cx2.fillStyle='#fff';cx2.font='bold 16px sans-serif';cx2.textAlign='center';cx2.fillText(it.t,r*.62,6);cx2.restore()});cx2.beginPath();cx2.arc(cx,cy,50,0,2Math.PI);cx2.fillStyle='#fff';cx2.fill();cx2.strokeStyle='rgba(0,102,255,.15)';cx2.lineWidth=2;cx2.stroke()}
+function dW(a){var cx=260,cy=260,r=240;cx2.clearRect(0,0,520,520);var arc=2*Math.PI/wIs.length;wIs.forEach(function(it,i){var sA=a+i*arc,eA=sA+arc;cx2.beginPath();cx2.moveTo(cx,cy);cx2.arc(cx,cy,r,sA,eA);cx2.closePath();cx2.fillStyle=it.c;cx2.globalAlpha=.75;cx2.fill();cx2.globalAlpha=1;cx2.strokeStyle='rgba(255,255,255,.4)';cx2.lineWidth=2;cx2.stroke();cx2.save();cx2.translate(cx,cy);cx2.rotate(sA+arc/2);cx2.fillStyle='#fff';cx2.font='bold 16px sans-serif';cx2.textAlign='center';cx2.fillText(it.t,r*.62,6);cx2.restore()});cx2.beginPath();cx2.arc(cx,cy,50,0,2*Math.PI);cx2.fillStyle='#fff';cx2.fill();cx2.strokeStyle='rgba(0,102,255,.15)';cx2.lineWidth=2;cx2.stroke()}
 dW(0);
-function spinW(){if(spn)return;spn=true;document.getElementById('wRes').textContent='';var ts=Math.random()360+1800,dur=4000,st=performance.now(),sa=cAng;function ani(now){var el=now-st,pr=Math.min(el/dur,1),ea=1-Math.pow(1-pr,3),ad=sa+tsea;dW(adMath.PI/180);if(pr<1){requestAnimationFrame(ani)}else{cAng=ad%360;spn=false;var arc=360/wIs.length,nm=(360-(cAng%360)+270)%360,idx=Math.floor(nm/arc)%wIs.length;document.getElementById('wRes').textContent='🎯 你的燃脂目标：'+wIs[idx].t+'！冲鸭！';tFW()}}requestAnimationFrame(ani)}
+function spinW(){if(spn)return;spn=true;document.getElementById('wRes').textContent='';var ts=Math.random()*360+1800,dur=4000,st=performance.now(),sa=cAng;function ani(now){var el=now-st,pr=Math.min(el/dur,1),ea=1-Math.pow(1-pr,3),ad=sa+ts*ea;dW(ad*Math.PI/180);if(pr<1){requestAnimationFrame(ani)}else{cAng=ad%360;spn=false;var arc=360/wIs.length,nm=(360-(cAng%360)+270)%360,idx=Math.floor(nm/arc)%wIs.length;document.getElementById('wRes').textContent='🎯 你的燃脂目标：'+wIs[idx].t+'！冲鸭！';tFW()}}requestAnimationFrame(ani)}
 // ===== 头像墙 =====
 var mbs=[{n:'领导',e:'👔'},{n:'成员1',e:'😎'},{n:'成员2',e:'💪'},{n:'成员3',e:'🏃'},{n:'成员4',e:'🚴'},{n:'成员5',e:'🤸'},{n:'成员6',e:'🏋️'},{n:'成员7',e:'⚡'},{n:'成员8',e:'🔥'},{n:'成员9',e:'🌟'},{n:'成员10',e:'🎯'},{n:'成员11',e:'🚀'}];
 var cks={},wl=document.getElementById('aWall');
 mbs.forEach(function(m,i){cks[i]=0;var it=document.createElement('div');it.className='ai';it.innerHTML='<div class="ac">'+m.e+'<div class="ck" id="ck'+i+'">0</div></div><div class="an">'+m.n+'</div>';it.onclick=function(){cks[i]++;this.classList.add('ch');document.getElementById('ck'+i).textContent=cks[i];uCT();cBurst(this)};wl.appendChild(it)});
 function uCT(){var t=0;for(var k in cks)t+=cks[k];document.getElementById('cTot').textContent=t>0?'🔥 全队已收到 '+t+' 次加油！':''}
-function cBurst(el){var r=el.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2;var ems=['💪','🔥','⚡','❤️','👏','🎉','💥','✨'];for(var i=0;i<6;i++){var s=document.createElement('div');s.style.cssText='position:fixed;left:'+cx+'px;top:'+cy+'px;pointer-events:none;z-index:200;font-size:16px;animation:fb .7s ease-out forwards;--tx:'+(Math.random()-.5)80+'px;--ty:'+(Math.random()-.5)80+'px';s.textContent=ems[Math.floor(Math.random()ems.length)];document.body.appendChild(s);setTimeout(function(){s.remove()},800)}}
+function cBurst(el){var r=el.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2;var ems=['💪','🔥','⚡','❤️','👏','🎉','💥','✨'];for(var i=0;i<6;i++){var s=document.createElement('div');s.style.cssText='position:fixed;left:'+cx+'px;top:'+cy+'px;pointer-events:none;z-index:200;font-size:16px;animation:fb .7s ease-out forwards;--tx:'+(Math.random()-.5)*80+'px;--ty:'+(Math.random()-.5)*80+'px';s.textContent=ems[Math.floor(Math.random()*ems.length)];document.body.appendChild(s);setTimeout(function(){s.remove()},800)}}
 // ===== 宣言 =====
 var pls=['今天的汗水，是明天的勋章！💪','不拼极限，只拼快乐！每一步都算数 🏃','卡路里？燃就完了！🔥🔥🔥','我来，我练，我吃大餐！🍽️💪','重在参与，赢在气势！😎','今日份运动，已充值！⚡','流汗的样子最帅/最美！✨','先燃脂，再干饭，完美的一天！🌟','器械随便选，快乐我全要！🎯','别问我练了多少，问就是——全力以赴！🚀','和最好的团队，做最燃的事！🔥','制造二科，制造快乐！🏭✨'];
 var pOk=false;
-function mkP(){var b=document.getElementById('pBtn'),r=document.getElementById('pRes');if(pOk){r.textContent=pls[Math.floor(Math.random()pls.length)];tFW();return}pOk=true;b.classList.add('pd');b.textContent='🔄 再来一条';r.textContent=pls[Math.floor(Math.random()pls.length)];tFW()}
+function mkP(){var b=document.getElementById('pBtn'),r=document.getElementById('pRes');if(pOk){r.textContent=pls[Math.floor(Math.random()*pls.length)];tFW();return}pOk=true;b.classList.add('pd');b.textContent='🔄 再来一条';r.textContent=pls[Math.floor(Math.random()*pls.length)];tFW()}
 // ===== 烟花 =====
-function tFW(){var cs=['#0066ff','#3d8bfd','#ff6a00','#ee0979','#0081C8','#00A651','#FCB131','#EE334E'];for(var i=0;i<20;i++){var f=document.createElement('div');f.className='fw';f.style.left=Math.random()window.innerWidth+'px';f.style.top=Math.random()window.innerHeight.6+'px';f.style.background=cs[Math.floor(Math.random()cs.length)];f.style.setProperty('--tx',(Math.random()-.5)120+'px');f.style.setProperty('--ty',(Math.random()-.5)120+'px');var sz=(Math.random()6+4)+'px';f.style.width=sz;f.style.height=sz;document.body.appendChild(f);setTimeout(function(el){el.remove()},900,f)}}
+function tFW(){var cs=['#0066ff','#3d8bfd','#ff6a00','#ee0979','#0081C8','#00A651','#FCB131','#EE334E'];for(var i=0;i<20;i++){var f=document.createElement('div');f.className='fw';f.style.left=Math.random()*window.innerWidth+'px';f.style.top=Math.random()*window.innerHeight*.6+'px';f.style.background=cs[Math.floor(Math.random()*cs.length)];f.style.setProperty('--tx',(Math.random()-.5)*120+'px');f.style.setProperty('--ty',(Math.random()-.5)*120+'px');var sz=(Math.random()*6+4)+'px';f.style.width=sz;f.style.height=sz;document.body.appendChild(f);setTimeout(function(el){el.remove()},900,f)}}
 // ===== 摇一摇 =====
 var shCnt=0,lShk=0;
 var eggs=[{e:'🎊',t:'发现彩蛋！',m:'你是最有探索精神的运动达人！<br>活动当天一定要大展身手哦～'},{e:'🏆',t:'隐藏成就！',m:'「摇一摇大师」成就已解锁！<br>看来你已经开始燃烧卡路里了 😂'},{e:'🎁',t:'神秘奖励！',m:'恭喜获得「聚餐多吃一碗」特权！<br>（仅限活动当天使用 🍚）'},{e:'⚡',t:'能量满格！',m:'你的运动热情已经溢出屏幕了！<br>活动当天请控制你的洪荒之力 💪'}];
